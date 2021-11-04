@@ -275,8 +275,8 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": true,
         "pending": false,
         "os": "windows",
-        "sessionId": "7da4d1c745c8cd4bb9b2cdf32df4c9cd",
-        "instanceId": 17172,
+        "sessionId": "353b0df1f6d05cacfc147fac532d7c7c",
+        "instanceId": 13412,
         "browser": {
             "name": "chrome",
             "version": "95.0.4638.69"
@@ -287,13 +287,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
             {
                 "level": "WARNING",
                 "message": "https://cdn.ampproject.org/rtv/012110042008000/v0/amp-ad-exit-0.1.mjs 2 Unrecognized feature: 'attribution-reporting'.",
-                "timestamp": 1635996056231,
+                "timestamp": 1636060339789,
                 "type": ""
             }
         ],
-        "screenShotFile": "00b7007e-00fc-00fa-0074-00f000a600f6.png",
-        "timestamp": 1635996054126,
-        "duration": 4515
+        "screenShotFile": "000400df-00b5-0077-0093-0063008c00b4.png",
+        "timestamp": 1636060337656,
+        "duration": 4274
+    },
+    {
+        "description": "user should be able to fill registration form|Given a user wants to register for a course",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "353b0df1f6d05cacfc147fac532d7c7c",
+        "instanceId": 13412,
+        "browser": {
+            "name": "chrome",
+            "version": "95.0.4638.69"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "002c0053-0008-0015-00f9-001700650029.png",
+        "timestamp": 1636060342657,
+        "duration": 446
     }
 ];
 

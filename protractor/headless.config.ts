@@ -1,7 +1,13 @@
 import { Config } from 'protractor';
 import { reporter } from './helpers/reporter';
 
-var HtmlReporter = require('protractor-beautiful-reporter');
+const { AwesomeReport } = require('jasmine-awesome-report');
+
+const awesomeConfig = {
+  fullPath: 'awesome-report',
+  fileName: 'report',
+  merge: true
+};
 
 export const config: Config = {
   framework: 'jasmine',
@@ -16,8 +22,6 @@ export const config: Config = {
   onPrepare: () => {
     reporter();
 
-    jasmine.getEnv().addReporter(new HtmlReporter({
-      baseDirectory: 'reports'
-   }).getJasmine2Reporter());
+    jasmine.getEnv().addReporter(AwesomeReport.getReport(awesomeConfig));
   }
 };
