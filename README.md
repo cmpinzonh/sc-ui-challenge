@@ -12,7 +12,8 @@
 ### 1. Project Setup
 
 **Description:** Assuming that you have both [Java](https://www.oracle.com/java/technologies/downloads/) and [NodeJS](https://nodejs.org/es/download/package-manager/) installed you should only need to clone the repo to your machine and run 
-    ``` bash
+
+    ```bash
     npm install
     ```
 
@@ -21,12 +22,14 @@ That will install all the required dependencies for the framework to function.
 ### 2. Running Tests Locally
 
 To run tests locally you can either choose to run them in headless mode or not, to run tests the old fashion way you need to execute the command:
-    ``` bash
+
+    ```bash
     npm run test:local
     ```
 
 Otherwise if you don't fancy seeing the browser when executing the tests you can run them with the following command
-    ``` bash
+
+    ```bash
     npm run test:headless
     ```
 
