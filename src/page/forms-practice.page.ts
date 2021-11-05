@@ -9,8 +9,6 @@ export class FormsPracticePage {
   private mobileField: ElementFinder;
   private addressField: ElementFinder;
   private submitButton: ElementFinder;
-
-  private closeAddButton: ElementFinder;
   private successModalTitle: ElementFinder;
 
 
@@ -23,7 +21,7 @@ export class FormsPracticePage {
     this.mobileField = $('#userNumber');
     this.addressField = $('#currentAddress');
     this.submitButton = $('#submit');
-    this.closeAddButton = $('#close-fixedban');
+
     this.successModalTitle = $('#example-modal-sizes-title-lg');
   }
 
@@ -42,7 +40,6 @@ export class FormsPracticePage {
   }
 
   public async submitForm(): Promise<void> {
-    await this.closeAddButton.click();
     await this.submitButton.click();
   }
 

@@ -11,6 +11,7 @@ describe('An user wants to practice form filling automation', () => {
   describe('When the user navigates to the form practice page', () => {
     beforeAll(async () => {
       const homePage: HomePage = new HomePage();
+      await homePage.closeAdd();
       await homePage.goToFormsPractice();
 
       expect(await browser.driver.getCurrentUrl()).toEqual('https://demoqa.com/forms');
@@ -31,7 +32,6 @@ describe('An user wants to practice form filling automation', () => {
       it('a modal indicatig that the submmital was succesful should be displayed', async () => {
 
         const formsPracticePage: FormsPracticePage = new FormsPracticePage();
-        await browser.sleep(3000);
         expect(formsPracticePage.getSuccessModalTitle()).toEqual("Thanks for submitting the form");
 
       })
