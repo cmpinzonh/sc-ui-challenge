@@ -1,8 +1,9 @@
 dist: xenial
 addons:
+  chrome: stable
   apt:
     packages:
-      - google-chrome-stable
+      - chromium-chromedriver
 language: node_js
 install:
   - npm ci
