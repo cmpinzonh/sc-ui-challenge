@@ -13,8 +13,11 @@ export const config: Config = {
   framework: 'jasmine',
   specs: ['../test/**/*.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
+  capabilities: {
+    browserName: 'chrome'
+  },
   onPrepare: () => {
-    reporter();
-   jasmine.getEnv().addReporter(AwesomeReport.getReport(awesomeConfig));
+    reporter()
+    jasmine.getEnv().addReporter(AwesomeReport.getReport(awesomeConfig));
   }
 };
