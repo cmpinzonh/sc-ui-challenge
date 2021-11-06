@@ -14,10 +14,7 @@ export const config: Config = {
   specs: ['../test/**/*.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
   capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-      args: ['--headless', '--disable-gpu']
-    }
+    browserName: 'chrome'
   },
   onPrepare: () => {
     reporter();
